@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery App</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    
+  <div class="container">
+    <form id="loginForm" class="form">
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    
+    <form id="registerForm" class="form">
+      <h2>Register</h2>
+      <input type="text" id="registerUsername" placeholder="Username" required>
+      <input type="email" id="registerEmail" placeholder="Email" required>
+      <input type="password" id="registerPassword" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+    <div id="forgotPassword" class="forgot-password">
+      <a href="#" onclick="showForgotPasswordForm()">Forgot Password?</a>
+    </div>
+    <form id="forgotPasswordForm" class="form" style="display: none;">
+      
+      <input type="email" id="forgotEmail" placeholder="Email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
